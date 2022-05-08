@@ -1,7 +1,8 @@
- @import url("https://github.com/hbisneto/Programadores/blob/27510b49724a704747e3c0c34bda45872615bd5f/bahnschrift.woff");
-    /*👨🏿‍💻*/
+@import url("https://github.com/lukasbryt/Programadores/blob/27510b49724a704747e3c0c34bda45872615bd5f/bahnschrift.woff");
+    
 
     body {
+      background-color: #38464F;
       font-family: Personal;
       color: white;
       background-image: linear-gradient(to right, #76bd05, #38464F);
