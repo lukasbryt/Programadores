@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+      <nav class="navbar is-fixed-top"">
+        <!--LOGO-->
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
+                <img id="brand" src="img/logo.svg" alt="logo" style="max-height: 70px;">
+            </a>
+            <!--Menu-->
+            <a class="navbar-burger" id="burger">
+                <img src="img/menu.svg">
+            </a>
+        </div>
+        <!--Navbar Links-->
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a href="index.html" class="navbar-item link">INÍCIO  </a>
+                <a href="https://chat.whatsapp.com/FEOXvRb35ju7uDRyVaSquv" class="navbar-item link">GRUPO</a>
+                <a class="navbar-item link">MATERIAS</a>
+                <a href="devs.html" class="navbar-item link">CONTRIBUIDORES</a>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+    <!--PAGE INFO-->
+    <section class="section">
+      <div class="container">
+        <h1>CONTRIBUIDORES</h1>
+        <div class="columns is-7 is-variable">
+          <!--Box-->
+          <div class="boxlu">
+            <article class="media columns">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <img src="img/heitor.webp" alt="Image">
+                </figure>
+              </div>
+              <div class="card-image media-content">
+                <div class="content">
+                  <p>
+                    <strong>Heitor Bisneto</strong> <small>hbisneto.github.io</small><br>
+                    Chefão das paradas, analista e desenvolvedor de sistemas. Sua arma para programar é o café.
+                  </p>
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-left">
+                    <a class="level-item" aria-label="reply">
+                      <span class="icon is-small">
+                        <i class="fas fa-reply" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="level-item" aria-label="retweet">
+                      <span class="icon is-small">
+                        <i class="fas fa-retweet" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="level-item" aria-label="like">
+                      <span class="icon is-small">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
+
+          <div class="boxlu">
+            <article class="media columns">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <img src="img/Lucas.webp" alt="Image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Lucas Brytto</strong> <small>lukasbryt.github.io</small> <small></small>
+                    <br>
+                    Nerd, menino do computador e designer gráfico. Estuda Tecnologia em Aplicações Web e UI/UX Design.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p>   
+          </p>
+        </div>
+      </div>
+      <h1>
+        TECNOLOGIAS UTILIZADAS
+      </h1>
+      <div class="content has-text-centered" style="animation: elements 1s;">
+        <a href="https://bulma.io"><img src="https://bulma.io/assets/Bulma%20Logo%20White.svg" style="max-width: 1024px;"></a>
+        <hr>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" style="max-width: 64px;">
+      </div>
+      
+    </section>
+
+      <script>
+        //mobile menu
+        const burgerIcon = document.querySelector('#burger');
+        const navbarMenu = document.querySelector('#nav-links');
+
+        burgerIcon.addEventListener('click', () => {navbarMenu.classList.toggle('is-active')
+      })
+      </script>
+
+      <footer>
+        <div class="content has-text-centered">
+          <span class="end-text">
+            <strong>PROGRAMADORES - 2022</strong><a href="https://jgthms.com"></a>. The source code is licensed MIT. The website content
+            is licensed.<br>
+            <a id="end-link" href="index.html">Início</a>
+          </span>
+        </div>
+      </footer>
+</body>
+</html>

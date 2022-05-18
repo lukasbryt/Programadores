@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html id="page" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body id="home">
+  <!--LOGIN FORM-->
+  <section id="login" class="hero is-fullheight">
+    <div class="hero-body has-text-centered">
+      <div class="login">
+        <img id="symbol" src="img/symbol.svg"/>
+        <form>
+          <div class="field">
+            <div class="control">
+              <input id="name_login" class="input is-medium is-rounded" type="name" placeholder="Ex: Lucão" autocomplete="username" required />
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input id="pass_login" class="input is-medium is-rounded" type="password" placeholder="**********" autocomplete="current-password" required />
+            </div>
+          </div>
+          <br />
+          <button id="enter" class="button is-block is-fullwidth is-primary is-medium is-rounded" type="button">
+            Login
+          </button>
+        </form>
+        <br>
+        <nav class="level">
+          <div class="level-item has-text-centered">
+            <div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <header id="header" class="header">
+      <nav class="navbar is-fixed-top"">
+        <!--LOGO-->
+        <div class="navbar-brand">
+            <span class="navbar-item">
+                <img id="brand" src="img/logo.svg" alt="logo" style="max-height: 70px;">
+            </span>
+            <!--Menu-->
+            <a class="navbar-burger" id="burger">
+                <img src="img/menu.svg">
+            </a>
+        </div>
+        <!--Navbar Links-->
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a href="index.html" class="navbar-item link">INÍCIO  </a>
+                <a href="https://chat.whatsapp.com/FEOXvRb35ju7uDRyVaSquv" class="navbar-item link">GRUPO</a>
+                <a class="navbar-item link">MATERIAS</a>
+                <a href="devs.html" class="navbar-item link">CONTRIBUIDORES</a>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+    <!--PAGE INFO-->
+    <section id="body" class="section">
+      <div class="">
+        <h1>
+          O QUE FAZ UM WEB DEVELOPER?
+        </h1>
+        <div id="home" class="columns">
+            <p class="index boxlu column">
+              <img id="arrow" src="img/arrow.svg"><br>
+              A criação de site tem como objetivo transformar toda informação da empresa em dados digitais para que usuários consigam encontrá-las de forma fácil na internet. Com o avanço das linguagens de programação e a necessidade de conteúdo na web, ter site tornou- se uma ferramenta fundamental para vários negócios.
+            </p><br>
+            <p class="index boxlu column">
+              <img id="arrow" src="img/arrow.svg"><br>
+              Desenvolvimento web, tradução de web development, é aquele orientado à produção de aplicativos e sistemas para a Internet. Em outras palavras, são sistemas acessados por meio de navegadores WEB.
+            </p><br>
+            <p class="index boxlu column">
+              <img id="arrow" src="img/arrow.svg"><br>
+              Pense em uma página WEB que você tenha visitado recentemente. Ela é um bom exemplo de web development. Há também páginas que desempenham uma função, como por exemplo a do seu banco, onde é possível, após realizar o login, fazer consultas, transações, etc.
+            </p>
+        </div>
+      </div>
+    </section>
+
+      <script>
+        //mobile menu
+        const burgerIcon = document.querySelector('#burger');
+        const navbarMenu = document.querySelector('#nav-links');
+
+        burgerIcon.addEventListener('click', () => {navbarMenu.classList.toggle('is-active')
+      })
+
+      //Hide and show screen
+      function showHide()
+        {
+            var Name = document.getElementById("name_login").value;
+            var Pass = document.getElementById("pass_login").value;
+
+            if(Name === "admin" && Pass === "admin")
+            {
+                document.getElementById("page").style.overflowY="visible";
+                document.getElementById("login").style.display="none";
+                document.getElementById("body").style.display="block";
+                document.getElementById("header").style.display="block";
+                document.getElementById("footer").style.display="block";
+                
+            }else{
+                alert("Senha ou usuário errado!");
+            }
+        }
+            enter.addEventListener("click",showHide)
+      </script>
+
+      <footer id="footer">
+        <div class="content has-text-centered">
+          <span class="end-text">
+            <strong>PROGRAMADORES - 2022</strong><a href="https://jgthms.com"></a>. The source code is licensed MIT. The website content
+            is licensed.<br>
+            <a id="end-link" href="index.html">Início</a>
+          </span>
+        </div>
+      </footer>
+</body>
+</html>
