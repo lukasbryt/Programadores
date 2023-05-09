@@ -1,2 +1,2 @@
 # Programadores
-Materiais, códigos e conteúdos sobre programação
+Materiais, códigos e conteúdos sobre programação. Estamos em desenvolvimento.
